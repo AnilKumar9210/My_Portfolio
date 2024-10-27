@@ -25,26 +25,26 @@ body {
   text-shadow: 6px 8px 7px rgb(1.3, 1.3, 1.2, 0.3);
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid black;
   animation: blink 1s steps(2, start) 3 forwards;
 }
 
 @keyframes blink {
   50% {
-    background-color: transparent; /* Invisible half the time */
+    background-color: transparent; 
   }
   100% {
-    background-color: transparent; /* Stop the cursor after 3 blinks */
+    background-color: transparent; 
   }
 }
 
 .contactMe {
+  position: relative;
+  top: 30px;
   display: flex;
   gap: 15px;
   width: 98%;
   padding:10px;
   height: 30vh;
-  border: 2px solid black;
   justify-content: center;
   align-items: center;
   flex-flow: column;
@@ -53,3 +53,21 @@ body {
   display: flex;
   gap: 24px;
 }
+
+.flex a {
+  opacity: 1;
+  transition:opacity 0.3s ease;
+}
+
+.flex:hover a {
+  opacity: 0.5;
+}
+
+.flex a:hover {
+  opacity: 1;
+}
+
+/* .flex a:hover~a,
+.flex a:not(:hover) {
+  opacity: 0.5;
+} */
