@@ -13,8 +13,6 @@ body {
   align-items: center;
 }
 
-
-
 .intro > div {
   height: 16vh;
   display: flex;
@@ -30,10 +28,10 @@ body {
 
 @keyframes blink {
   50% {
-    background-color: transparent; 
+    background-color: transparent;
   }
   100% {
-    background-color: transparent; 
+    background-color: transparent;
   }
 }
 
@@ -43,7 +41,7 @@ body {
   display: flex;
   gap: 15px;
   width: 98%;
-  padding:10px;
+  padding: 10px;
   height: 30vh;
   justify-content: center;
   align-items: center;
@@ -56,7 +54,7 @@ body {
 
 .flex a {
   opacity: 1;
-  transition:opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .flex:hover a {
@@ -71,3 +69,41 @@ body {
 .flex a:not(:hover) {
   opacity: 0.5;
 } */
+
+body::-webkit-scrollbar {
+  width: 0.6em;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #a8a2a2;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    margin-top: 10px;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .intro > div {
+    height: 4vh;
+    display: block;
+    margin: 15px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+  .contactMe > h1 {
+    height: 50px;
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+  .flex {
+    gap: 12px;
+  }
+}

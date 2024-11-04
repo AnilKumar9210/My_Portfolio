@@ -40,3 +40,23 @@
     height: 130px;
     cursor: pointer;
 }
+
+@media (max-width:786px) {
+    .info {
+        height: 50px;
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+
+
+    .image {
+        width: 60px;
+    border-radius: 5px;
+    height: 60px;
+    }
+
+    .tech {
+        height: 15px;
+        top: 10px;
+    }
+}

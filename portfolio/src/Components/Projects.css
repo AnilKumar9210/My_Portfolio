@@ -1,52 +1,83 @@
 .projectDtls {
-    display: flex;
-    position: relative;
-    width: 49%;
-    align-items: center;
-    margin: 2px 4px;
-    transition: all ease-out 0.2s;
-    border-radius: 5px;
-    gap: 15px;
+  display: flex;
+  position: relative;
+  width: 49%;
+  align-items: center;
+  margin: 2px 4px;
+  transition: all ease-out 0.2s;
+  border-radius: 5px;
+  gap: 15px;
 }
 .projectSec {
-    width: 98%;
-    margin: 20px 0;
-    padding: 5px;
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
+  width: 98%;
+  margin: 20px 0;
+  padding: 5px;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
 }
 .proImg {
-    width: 75px;
-    height: 75px;
+  width: 75px;
+  height: 75px;
 }
 
 .gallery {
-    width: 100%;
-    position: relative;
-    text-align: center;
-    margin: 18px 0;
-    font-size: 1.3rem;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin: 18px 0;
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
 .photo {
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    padding: 8px 0px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  padding: 8px 0px;
 }
 
-.photo>div {
-    font-size: 1.2rem;
-    font-weight: bolder;
+.photo > div {
+  font-size: 1.2rem;
+  font-weight: bolder;
 }
 
 .desc {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .projectDtls:hover {
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 786px) {
+  .gallery {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .projectSec {
+    flex-flow: column;
+    gap: 10px;
+  }
+
+  .projectDtls {
+    width: 97%;
+    gap: 6px;
+  }
+
+  .proImg {
+    width: 45px;
+    height: 45px;
+  }
+
+  .photo>div {
+    font-size: 0.8rem;
+  }
+  .desc {
+    font-weight: 600;
+  }
 }

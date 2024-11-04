@@ -25,3 +25,9 @@ nav>ul>li {
 nav>ul>li:hover {
     font-weight: bold;
 }
+
+@media (max-width:786px) {
+    nav>ul {
+        gap: 14px;
+    }
+}

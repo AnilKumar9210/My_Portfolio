@@ -10,7 +10,7 @@ import AboutMe from './Components/AboutMe';
 function App() {
 
   const [displayText,setDisplayText] = useState ("");
-  const text = "Hii,I'm Anil \n, Front-End Developer.";
+  const text = "Hii,I'm Anil, Front-End Developer.";
   const [imageLinks,setImageLinks] = useState ([
     {
       id: uuidv4 (),

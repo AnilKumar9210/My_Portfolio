@@ -4,3 +4,16 @@
     font-weight: bold;
     padding: 13px 43px
 }
+
+@media (max-width:786px) {
+    .aboutSec {
+        height: 44vh;
+        width: auto;
+        font-weight: bold;
+        padding: 0px 20px;
+    }
+
+    .aboutSec>p {
+        font-weight: 600;
+    }
+}

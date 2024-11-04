@@ -8,7 +8,7 @@ const Services = (props) => {
     <div className='info'>Technologies</div>
     <div className='projects'>
         {props.services.map ((item)=> {
-            return <div className='card'>
+            return <div className='card' key={item.id}>
             <img id={item.id} src={item.imgLink} alt={item.title} className="image" />
             </div>
         })}
