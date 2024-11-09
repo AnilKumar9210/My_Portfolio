@@ -27,7 +27,23 @@ nav>ul>li:hover {
 }
 
 @media (max-width:786px) {
+    nav{
+        width: 99%;
+        height: 60px;
+    }
+    nav>ul>li{
+        border-radius: none;
+        font-size: medium;
+        /* align-items:flex-start; */
+        
+    }
     nav>ul {
-        gap: 14px;
+        width: 98%;
+        gap: 10px;
+        align-items:flex-start;
+        left: 0px;
+        position: relative;
+        /* display: block; */
+        padding: 0px 0px 0px 9px;
     }
 }

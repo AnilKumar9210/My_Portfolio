@@ -1,0 +1,44 @@
+.contactMe {
+    position: relative;
+    top: 30px;
+    display: flex;
+    gap: 35px;
+    width: 98%;
+    padding: 10px;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+  .flex {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .flex a {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .flex:hover a {
+    opacity: 0.5;
+  }
+  
+  .flex a:hover {
+    opacity: 1;
+  }
+
+  @media (max-width:786px) {
+    .contactMe {
+        top: 120px;
+        width: 95%;
+      }
+      .contactMe > h1 {
+        height: 10px;
+        font-size: 1.7rem;
+        font-weight: 600;
+      }
+      .flex {
+        gap: 12px;
+      }
+  }

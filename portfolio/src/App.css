@@ -7,7 +7,6 @@ body {
 }
 
 .intro {
-  padding: 16px;
   height: 21vh;
   display: flex;
   align-items: center;
@@ -20,7 +19,6 @@ body {
   align-items: center;
   font-size: xx-large;
   font-weight: bolder;
-  text-shadow: 6px 8px 7px rgb(1.3, 1.3, 1.2, 0.3);
   white-space: nowrap;
   overflow: hidden;
   animation: blink 1s steps(2, start) 3 forwards;
@@ -35,35 +33,7 @@ body {
   }
 }
 
-.contactMe {
-  position: relative;
-  top: 30px;
-  display: flex;
-  gap: 15px;
-  width: 98%;
-  padding: 10px;
-  height: 30vh;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-}
-.flex {
-  display: flex;
-  gap: 24px;
-}
 
-.flex a {
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-.flex:hover a {
-  opacity: 0.5;
-}
-
-.flex a:hover {
-  opacity: 1;
-}
 
 /* .flex a:hover~a,
 .flex a:not(:hover) {
@@ -88,6 +58,7 @@ body::-webkit-scrollbar-thumb {
     margin-top: 10px;
     height: 6vh;
     display: flex;
+    width: 97%;
     align-items: center;
   }
 
@@ -97,6 +68,9 @@ body::-webkit-scrollbar-thumb {
     margin: 15px;
     font-size: 1.2rem;
     font-weight: bolder;
+  }
+  .contactMe {
+    width: 95%;
   }
   .contactMe > h1 {
     height: 50px;
